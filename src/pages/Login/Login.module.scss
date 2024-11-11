@@ -1,0 +1,61 @@
+$primary-color: #2a2a2a; /* Темний колір для тексту */
+$accent-color: #b89e4e; /* Золотистий акцент */
+$hover-color: #d4af37; /* Світліший відтінок для наведення */
+$background-color: #f4f4f4; /* Світлий фон */
+$border-color: #dedede; /* Колір для рамок */
+$button-hover: #d1c28b; /* Світліший золотистий відтінок на кнопці */
+
+.root {
+  width: 400px;
+  padding: 40px;
+  border: 1px solid $border-color;
+  margin: 50px auto;
+  background-color: $background-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center!important;
+  font-family: 'Times New Roman', Times, serif!important;
+  font-size: 2rem!important;
+  font-weight: bold!important;
+  margin-bottom: 30px!important;
+  color: $primary-color!important;
+}
+
+.field {
+  margin-bottom: 20px!important;
+
+  .MuiInputBase-root {
+    border-radius: 8px!important;
+    border: 1px solid $border-color!important;
+    padding: 12px!important;
+    font-size: 1.1rem!important;
+    font-family: 'Georgia', serif!important;
+  }
+
+  .Mui-focused {
+    border-color: $accent-color!important;
+  }
+}
+
+.button {
+  margin-top: 20px!important;
+  background-color: $accent-color!important;
+  color: #fff!important;
+  font-family: 'Georgia', serif!important;
+  font-weight: 600!important;
+  border-radius: 8px!important;
+  padding: 12px!important;
+  transition: background-color 0.3s ease!important;
+
+  &:hover {
+    background-color: $button-hover!important;
+  }
+
+  &:disabled {
+    background-color: #b0b0b0!important;
+    cursor: not-allowed!important;
+  }
+}

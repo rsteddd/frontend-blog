@@ -1,0 +1,66 @@
+/* Загальний стиль для всіх кнопок */
+.uploadButton, .removeButton, .buttons button {
+  background-color: #b89e4e; /* основний колір кнопок */
+  color: white; /* текст кнопки буде білим */
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover, .removeButton:hover, .buttons button:hover {
+  background-color: #9a7a3e; /* темніший відтінок для hover */
+}
+
+.uploadPreview {
+  position: relative; /* додаємо relative для позиціонування кнопки */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%; /* адаптивність */
+  justify-content: center;
+}
+
+.uploadPreview img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.removeButton {
+  position: absolute; /* розміщуємо кнопку поверх зображення */
+  top: 10px; /* відступ від верхнього краю */
+  right: 10px; /* відступ від правого краю */
+  background-color: rgba(184, 158, 78, 0.8); /* напівпрозорий фон */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: rgba(184, 158, 78, 1); /* при наведенні кнопка стає менш прозорою */
+}
+
+.title, .tags {
+  margin-bottom: 20px;
+}
+
+.editor {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
